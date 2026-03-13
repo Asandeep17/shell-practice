@@ -1,8 +1,12 @@
 #!/bin/bash
-echo "suresh:: Hello Ramesh, How are You?"
-echo "Ramesh:: Hi Suresh, I am fine Thanks for asking.how are you doing"
-echo "Suresh:: doing fine. what are you laraning Ramesh?"
-echo "ramesh:: I am learning shell script.what about you?"
-echo "Suresh:: ok Bye"
-echo "Ramesh:: ok Bye"
-echo "suresh:: see you later"
+
+PERSON1=Suresh # no space between value and=
+PERSON2=Ramesh
+
+echo "$PERSON1:: Hello $PERSON2, How are You?"
+echo "$PERSON2:: Hi $PERSON1, I am fine Thanks for asking.how are you doing"
+echo "$PERSON1:: doing fine. what are you laraning $PERSON2?"
+echo "$PERSON2:: I am learning shell script.what about you?"
+echo "$PERSON1:: ok Bye"
+echo "$PERSON2:: ok Bye"
+echo "$PERSON1:: see you later"
