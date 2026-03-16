@@ -1,6 +1,9 @@
 #!/bin/bash
 
 
-TIMESTAMP=$(date)
+START_TIME=$(date)
  
-  echo "script executed at: $TIMESTAMP"
+  echo "script executed at: $START_TIME"
+  sleep 10
+
+  ENDTIME=$(date)
