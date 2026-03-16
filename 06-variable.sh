@@ -8,6 +8,6 @@ START_TIME=$(date +%s)
 
   END_TIME=$(date +%s)
 
-  TOTAL_TIME=$($ENDTIME-$START_TIME)
+  TOTAL_TIME=$((ENDTIME-$START_TIME))
 
-  echo "script executed in :$TOTAL_TIME"
+  echo "script executed in :$TOTAL_TIME seconds"
