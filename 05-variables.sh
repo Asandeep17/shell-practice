@@ -1,6 +1,7 @@
 #!/bin/bash
+
 echo "enter user name::"
 
-echo USER_NAME
+read USER_NAME
 
 echo "user name is $USER_NAME" 
