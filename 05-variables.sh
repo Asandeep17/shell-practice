@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "enter user name"
 
 echo USER_NAME
