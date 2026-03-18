@@ -10,4 +10,4 @@ echo "home directory of current user : $HOME"
 echo "pid of this Script: $$"
 sleep 100 &
 echo "PID of recently executed background process: $!"
-echo "all grgs passed to script: $*"cscd repos 
+echo "all grgs passed to script: $*"
