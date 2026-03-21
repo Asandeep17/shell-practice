@@ -1,8 +1,8 @@
 #!/bin/bash 
 
-NUMBER=25
-#
+NUMBER=$1
+
 
 if [ $NUMBER -gt 20 ];
-echo "given number is greather then 25"
+echo "given number is greather then 20"
 fi 
