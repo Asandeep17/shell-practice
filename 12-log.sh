@@ -16,7 +16,7 @@ VALIDATE(){
     echo "$2 ... FAILURE"
     exit 1 
     else 
-        echo "$2 ... success"
+        echo "$2 ... suucess"
         fi
 
 }
@@ -26,3 +26,6 @@ VaLIDATE $? "Installing Nginx"
 
 dnf install mysql -y &>> $LOGS_FILES
 VaLIDATE $? "Installing mysql"
+
+dnf install nodejs  -y &>> $LOGS_FILES
+VaLIDATE $? "Installing nodejs"
