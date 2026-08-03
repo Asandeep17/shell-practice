@@ -9,10 +9,12 @@ LOGS_FILE="/var/log/shell-script/$0.log"
 if [ $USERID -ne 0 ]; then 
 echo "please run this script with root user access"
 exit 1
+
 fi
+
 mkdir -p $LOGS_FOLDER
 VALIDATE(){
-    if [$1 -ne 0 ]; then 
+    if [ $1 -ne 0 ]; then 
     echo "$2 ... FAILURE"
     exit 1 
     else 
