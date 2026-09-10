@@ -26,14 +26,14 @@ if [ $# -lt 2 ] ; then
 USAGE
 fi
 
-if [ ! -d $SOURCE_DIR]; then 
+if [ ! -d "$SOURCE_DIR"]; then 
 echo -e "$R $SOUECE_DIR does not exitst $N"
 exit 1
 fi
 
 
 
-if [ ! -d $DOURCE_DIR]; then 
+if [ ! -d $DIST_DIR]; then 
 echo -e "$R $DIST_DIR does not exitst $N"
 exit 1
 fi
