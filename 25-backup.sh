@@ -33,7 +33,7 @@ fi
 
 
 
-if [ ! -d $DIST_DIR]; then 
+if [ ! -d "$DIST_DIR"]; then 
 echo -e "$R $DIST_DIR does not exitst $N"
 exit 1
 fi
