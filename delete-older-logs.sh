@@ -23,5 +23,5 @@ echo " deleting file: $filepath"
 
 rm -f $filepath
 
-echo "deleted file: $filepath
+echo "deleted file: $filepath"
 done <<< $FILES_TO_DELETE
