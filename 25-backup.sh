@@ -16,7 +16,7 @@ exit 1
 fi
 
 mkdir -p $LOGS_FOLDER
-usage(){
+USAGE(){
 
     echo -e "$R USAGE::sudo backup <SOURCE_DIR> DEST_DIR> DAYS[deafault 14 days]"
     exit 1
