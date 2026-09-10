@@ -11,7 +11,7 @@ N="\e[0m"
 SOURCE_DIR=$1
 DEST_DIR=$2
 
-DAYS=${ 3:-14} #14 days is the default value if the user not supplied
+DAYS=${3:-14} #14 days is the default value if the user not supplied
 
 if [ $USERID -ne 0 ]; then 
 echo -e " $R please run this script with root user access $N" | tee -a $LOG_FILE
