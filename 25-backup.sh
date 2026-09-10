@@ -8,6 +8,10 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
+SOURCE_DIR=$1
+DEST_DIR=$2
+
+DAYS=${ 3:14} #14 days is the default value if the user not supplied
 
 if [ $USERID -ne 0 ]; then 
 echo -e " $R please run this script with root user access $N" | tee -a $LOG_FILE
@@ -23,4 +27,14 @@ USAGE(){
 }
 if [ $# -lt 2 ] ; then
 USAGE
+fi
+
+if [ ! -d $SOURCE_DIR] ; then 
+echo "$r $SOUECE_DIR does not exitst $N"
+fi
+
+
+
+if [ ! -d $DOURCE_DIR] ; then 
+echo "$r $DIST_DIR does not exitst $N"
 fi
