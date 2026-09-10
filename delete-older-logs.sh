@@ -6,4 +6,8 @@ Y="\e[33m"
 N="\e[0m"
 
 LOGS_DIR=/home/ec2-user/app-log
-LOGS_FILE="$LOGS_DIR/$0.log
+LOGS_FILE="$LOGS_DIR/$0.log"
+
+if [ ! -d $LOGS_DIR ]: then
+FILES_TO_DELETE=$(find $LOGS_DIR -name "*.log" -mtime +14)
+echo "$FILES_TO_DELETE"
