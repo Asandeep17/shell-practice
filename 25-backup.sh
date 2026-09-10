@@ -31,6 +31,7 @@ fi
 
 if [ ! -d $SOURCE_DIR] ; then 
 echo "$R $SOUECE_DIR does not exitst $N"
+exit 1
 fi
 
 
